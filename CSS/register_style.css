@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #26343e;
+    color: white;
+}
+
+
+/* PAGINA REGISTER */
+
+.register-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+
+/* CARDUL PRINCIPAL */
+
+.register-card {
+    width: 100%;
+    max-width: 720px;
+    background-color: #30414c;
+    border-radius: 14px;
+    padding: 35px 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+/* TITLU */
+
+.register-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.register-header h1 {
+    margin: 0 0 8px;
+    font-size: 30px;
+    color: white;
+}
+
+.register-header p {
+    margin: 0;
+    color: #b9c4cb;
+    font-size: 14px;
+}
+
+
+/* RANDURI FORMULAR */
+
+.row {
+    margin-bottom: 18px;
+}
+
+.row > label,
+.two-col label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* INPUTURI */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #536772;
+    border-radius: 6px;
+    background-color: #26343e;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #8e9ca5;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3b7fc4;
+}
+
+
+/* DOUA COLOANE */
+
+.two-col {
+    display: flex;
+    gap: 18px;
+}
+
+.two-col > div {
+    flex: 1;
+}
+
+
+/* GEN */
+
+.option-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.option {
+    background-color: #26343e;
+    border: 1px solid #536772;
+    border-radius: 20px;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+.option input {
+    width: auto;
+    margin-right: 5px;
+}
+
+
+/* INTERESE */
+
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.interest {
+    background-color: #26343e;
+    border: 1px solid #536772;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.interest input {
+    width: auto;
+    margin-right: 6px;
+}
+
+
+/* POZA */
+
+input[type="file"] {
+    cursor: pointer;
+}
+
+
+/* DESCRIERE */
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+
+/* BUTOANE */
+
+.actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.actions button {
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-create {
+    flex: 2;
+    border: none;
+    background-color: #3b7fc4;
+    color: white;
+}
+
+.btn-create:hover {
+    background-color: #326eaa;
+}
+
+.btn-reset {
+    flex: 1;
+    background-color: transparent;
+    border: 1px solid #71828c;
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: #3a4d59;
+}
+
+
+/* LINK LOGIN */
+
+.login-link {
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #3b8bd8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    .register-page {
+        padding: 20px 10px;
+    }
+
+    .register-card {
+        padding: 25px 20px;
+    }
+
+    .two-col {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .interest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .option-group {
+        flex-direction: column;
+    }
+}

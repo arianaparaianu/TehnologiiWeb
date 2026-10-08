@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Înregistrare</title>
+
+    <link rel="stylesheet" href="../CSS/register_style.css">
+</head>
+
+<body>
+
+    <main class="register-page">
+
+        <section class="register-card">
+
+            <div class="register-header">
+                <h1>Creează-ți contul</h1>
+                <p>Completează datele de mai jos pentru a te alătura comunității.</p>
+            </div>
+
+            <form class="register-form"
+                  action="login.html"
+                  method="get">
+
+                <div class="row">
+                    <label for="username">Nume utilizator</label>
+
+                    <input type="text"
+                           id="username"
+                           name="username"
+                           placeholder="ex: ariana22"
+                           required>
+                </div>
+
+                <div class="row">
+                    <label for="email">Email</label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="nume@email.com"
+                           required>
+                </div>
+
+                <div class="row two-col">
+
+                    <div>
+                        <label for="password">Parolă</label>
+
+                        <input type="password"
+                               id="password"
+                               name="password"
+                               placeholder="Introdu parola"
+                               required>
+                    </div>
+
+                    <div>
+                        <label for="confirm_password">Confirmă parola</label>
+
+                        <input type="password"
+                               id="confirm_password"
+                               name="confirm_password"
+                               placeholder="Repetă parola"
+                               required>
+                    </div>
+
+                </div>
+
+                <div class="row two-col">
+
+                    <div>
+                        <label for="birthdate">Data nașterii</label>
+
+                        <input type="date"
+                               id="birthdate"
+                               name="birthdate"
+                               required>
+                    </div>
+
+                    <div>
+                        <label for="country">Țara</label>
+
+                        <select id="country"
+                                name="country"
+                                required>
+
+                            <option value="">Selectează țara</option>
+                            <option value="romania">România</option>
+                            <option value="germany">Germania</option>
+                            <option value="italy">Italia</option>
+                            <option value="france">Franța</option>
+                            <option value="spain">Spania</option>
+
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <label>Gen</label>
+
+                    <div class="option-group">
+
+                        <label class="option">
+                            <input type="radio"
+                                   name="gender"
+                                   value="female"
+                                   required>
+                            Femeie
+                        </label>
+
+                        <label class="option">
+                            <input type="radio"
+                                   name="gender"
+                                   value="male">
+                            Bărbat
+                        </label>
+
+                        <label class="option">
+                            <input type="radio"
+                                   name="gender"
+                                   value="other">
+                            Altul
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <label for="account">Tip cont</label>
+
+                    <select id="account"
+                            name="account"
+                            required>
+
+                        <option value="">Alege tipul contului</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Profesor</option>
+                        <option value="guest">Vizitator</option>
+
+                    </select>
+
+                </div>
+
+                <div class="row">
+
+                    <label>Ce te interesează?</label>
+
+                    <div class="interest-grid">
+
+                        <label class="interest">
+                            <input type="checkbox"
+                                   name="interests"
+                                   value="html">
+                            HTML
+                        </label>
+
+                        <label class="interest">
+                            <input type="checkbox"
+                                   name="interests"
+                                   value="css">
+                            CSS
+                        </label>
+
+                        <label class="interest">
+                            <input type="checkbox"
+                                   name="interests"
+                                   value="javascript">
+                            JavaScript
+                        </label>
+
+                        <label class="interest">
+                            <input type="checkbox"
+                                   name="interests"
+                                   value="frontend">
+                            Frontend
+                        </label>
+
+                        <label class="interest">
+                            <input type="checkbox"
+                                   name="interests"
+                                   value="backend">
+                            Backend
+                        </label>
+
+                        <label class="interest">
+                            <input type="checkbox"
+                                   name="interests"
+                                   value="uxui">
+                            UX/UI
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <label for="profile_picture">Poză de profil</label>
+
+                    <input type="file"
+                           id="profile_picture"
+                           name="profile_picture"
+                           accept="image/*">
+
+                </div>
+
+                <div class="row">
+
+                    <label for="description">Despre tine</label>
+
+                    <textarea id="description"
+                              name="description"
+                              rows="3"
+                              placeholder="Spune-ne câteva lucruri despre tine..."></textarea>
+
+                </div>
+
+                <div class="actions">
+
+                    <button type="submit" class="btn-create">
+                        Creează cont
+                    </button>
+
+                    <button type="reset" class="btn-reset">
+                        Resetează
+                    </button>
+
+                </div>
+
+                <p class="login-link">
+                    Ai deja cont?
+                    <a href="login.html">Autentifică-te</a>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
