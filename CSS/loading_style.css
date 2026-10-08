@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(90deg, #3f70ad, #1f527e);
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.loader {
+    width: 25px;
+    height: 25px;
+
+    border: 4px solid rgba(255, 255, 255, 0.35);
+    border-top: 4px solid white;
+
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
