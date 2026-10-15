@@ -25,22 +25,36 @@
 
             <h2>Login</h2>
 
-            <input type="email" placeholder="Email">
+            <form id="loginForm">
 
-            <input type="password" placeholder="Parola">
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                >
 
-            <a href="./home.html" class="login-button">
-                Login
-            </a>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Parola"
+                >
+
+                <button type="submit" class="login-button">
+                    Login
+                </button>
+
+            </form>
 
             <p class="register-text">
                 Nu ai cont?
-                <a href="./register.html">Înregistrează-te</a>
+                <a href="register.html">Înregistrează-te</a>
             </p>
 
         </div>
 
     </div>
+
+    <script src="../JS/login_js.js"></script>
 
 </body>
 
